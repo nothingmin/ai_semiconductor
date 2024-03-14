@@ -10,7 +10,7 @@ def forward_cal(w, x):
 
 def loss_cal(w, x, y):
     y_pred = forward_cal(w, x)
-    return y_pred ** 2
+    return (y_pred-y) ** 2
 
 
 def gradient_cal(w, x, y):  # d_loss/d_w
